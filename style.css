@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "lexend";
+    src: url("https://fonts.google.com/specimen/Lexend+Deca");
+  }
+
+  @font-face {
+    font-family: "bigshoulders";
+    src: url("https://fonts.google.com/specimen/Big+Shoulders+Display");
+  }  
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --clr-bright-orange: hsl(31, 77%, 52%);
+    --clr-dark-cyan: hsl(184, 100%, 22%);
+    --clr-very-dark-cyan: hsl(179, 100%, 13%);
+
+    --clr-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --clr-very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+    font-size: 15px;
+    background-color: var(--clr-very-light-gray);
+    color: var(--clr-very-light-gray);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 1rem;
+}
+
+section {
+    max-width: 250px;
+    padding: 3rem;
+}
+
+h1 {
+    text-transform: uppercase;
+    margin: 1.5rem 0 1.5rem 0;
+    font-family: "lexend";
+}
+
+p {
+    color: var(--clr-transparent-white);
+    line-height: 1.5;
+    height: 30vh;
+    font-family: "bigshoulders";
+}
+
+button {
+    background-color: var(--clr-very-light-gray);
+    padding: .5rem 1.5rem;
+    border-radius: 50px;
+    border-style: none;
+}
+button:hover {
+    cursor: pointer;
+    border: 1px solid var(--clr-very-light-gray);
+}
+
+main > section:nth-child(1) {
+    background-color: var(--clr-bright-orange);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-radius: 10px 10px 0 0;
+}
+main > section:nth-child(2) {
+    background-color: var(--clr-dark-cyan);
+}
+main > section:nth-child(3) {
+    background-color: var(--clr-very-dark-cyan);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+
+main > section:nth-child(1) button {
+    color: var(--clr-bright-orange);
+}
+main > section:nth-child(2) button {
+    color: var(--clr-dark-cyan);
+}
+main > section:nth-child(3) button {
+    color: var(--clr-very-dark-cyan);
+}
+
+main > section:nth-child(1) button:hover {
+    background-color: var(--clr-bright-orange);
+    color: var(--clr-very-light-gray);
+}
+main > section:nth-child(2) button:hover {
+    background-color: var(--clr-dark-cyan);
+    color: var(--clr-very-light-gray);
+}
+main > section:nth-child(3) button:hover {
+    background-color: var(--clr-very-dark-cyan);
+    color: var(--clr-very-light-gray);
+}
+
+@media screen and (min-width: 1440px) {
+    main {
+        height: 100vh;
+        flex-direction: row;       
+        margin: 0;
+    }
+
+    main > section:nth-child(1) {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-radius: 10px 0 0 10px;
+    }
+    main > section:nth-child(2) {
+    }
+    main > section:nth-child(3) {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-radius: 0 10px 10px 0;
+    }
+}
