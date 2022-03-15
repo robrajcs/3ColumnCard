@@ -1,11 +1,11 @@
 @font-face {
     font-family: "lexend";
-    src: url("https://fonts.google.com/specimen/Lexend+Deca");
+    src: url("./LexendDecaRegular.ttf");
   }  
 
  @font-face {
     font-family: "bigshoulders";
-    src: url("https://fonts.google.com/specimen/Big+Shoulders+Display");
+    src: url("./big-shoulders-display.medium.ttf");
   }  
 
 
@@ -48,7 +48,9 @@ h1 {
     text-transform: uppercase;
     margin: 1.5rem 0 1.5rem 0;
     font-family: "bigshoulders";
-    font-weight: 700;
+   dfont-size: 26px;
+    dfont-weight: 700;
+    dfont-stretch: wider;
 }
 
 p {
