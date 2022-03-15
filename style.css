@@ -1,9 +1,9 @@
 @font-face {
     font-family: "lexend";
     src: url("https://fonts.google.com/specimen/Lexend+Deca");
-  }
+  }  
 
-  @font-face {
+ @font-face {
     font-family: "bigshoulders";
     src: url("https://fonts.google.com/specimen/Big+Shoulders+Display");
   }  
@@ -27,6 +27,8 @@ body {
     font-size: 15px;
     background-color: var(--clr-very-light-gray);
     color: var(--clr-very-light-gray);
+    font-family: "lexend";
+    font-weight: 400;    
 }
 
 main {
@@ -45,19 +47,21 @@ section {
 h1 {
     text-transform: uppercase;
     margin: 1.5rem 0 1.5rem 0;
-    font-family: "lexend";
+    font-family: "bigshoulders";
+    font-weight: 700;
 }
 
 p {
     color: var(--clr-transparent-white);
     line-height: 1.5;
-    height: 30vh;
-    font-family: "bigshoulders";
+    height: 22vh;
 }
 
 button {
+    height: 2.5rem;
+    width: 70%;
     background-color: var(--clr-very-light-gray);
-    padding: .5rem 1.5rem;
+
     border-radius: 50px;
     border-style: none;
 }
